@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f8f7ff">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png" type="image/png"><title>BookNest — Personal Reading Space</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="side" id="side">
+ <div class="brand"><div class="logo">⌑</div><div><b>Book<span>Nest</span></b><small>YOUR READING SPACE</small></div></div>
+ <button class="add" id="addBook">＋ &nbsp; Add a New Book</button>
+ <div class="nav-label">LIBRARY</div>
+ <nav class="nav" id="nav">
+  <button class="active" data-page="dashboard"><span class="ico">⌂</span>Dashboard</button>
+  <button data-page="library"><span class="ico">▤</span>My Library</button>
+  <button data-page="reading"><span class="ico">◷</span>Currently Reading</button>
+  <button data-page="want"><span class="ico">♡</span>Want to Read</button>
+  <button data-page="finished"><span class="ico">✓</span>Finished Books</button>
+  <button data-page="favorites"><span class="ico">★</span>Favorites</button>
+ </nav>
+ <div class="nav-label">PERSONAL SPACE</div>
+ <nav class="nav"><button data-page="goals"><span class="ico">◎</span>Reading Goals</button><button data-page="journal"><span class="ico">✎</span>Reading Journal</button><button data-page="stats"><span class="ico">▥</span>Statistics</button></nav>
+ <div class="side-bottom"><div class="tip"><b>✦ A little reading reminder</b><p>Every page you read is a small step into a bigger world. Keep your reading journey going.</p></div><div class="profile"><div class="avatar">R</div><div><b>My BookNest</b><small>Personal library</small></div></div></div>
+</aside><div class="overlay" id="overlay"></div>
+<main class="main">
+<header class="top"><div style="display:flex;align-items:center;gap:9px"><button class="menu" id="menu">☰</button><div class="crumb">BookNest / <strong id="crumb">Dashboard</strong></div></div><div class="top-right"><span class="today" id="today"></span><button class="btn" id="remind">🔔 Reminder</button><button class="btn" id="backup">↓ Backup</button></div></header>
+<div class="content" id="content"></div>
+</main></div>
+<div class="backdrop" id="backdrop"><div class="modal"><div class="modal-head"><h3 id="modalTitle">Add Book</h3><button class="close" id="close">×</button></div><div class="modal-body" id="modalBody"></div><div class="modal-foot" id="modalFoot"></div></div></div>
+<div class="toast" id="toast"></div><input type="file" id="importFile" accept=".json,application/json" hidden>
+<script src="script.js"></script>
+</body></html>
