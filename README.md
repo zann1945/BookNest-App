@@ -19,21 +19,6 @@ Aplikasi ini berjalan sepenuhnya di browser, tanpa server, tanpa akun, dan tanpa
 - **Pengingat harian**: notifikasi seperti "Kamu belum membaca buku hari ini?" pada jam yang kamu pilih (butuh izin notifikasi).
 - **Responsif**: nyaman dipakai di HP maupun komputer.
 
-## 🚀 Cara Menjalankan
-
-1. Unduh atau clone repositori ini.
-2. Buka file `index.html` di browser.
-
-Tidak ada dependensi atau proses build.
-
-## 🌐 Demo Online
-
-Setelah GitHub Pages aktif, aplikasi dapat dibuka di:
-
-`https://USERNAME.github.io/NAMA-REPOSITORI/`
-
-## 💾 Penyimpanan Data
-
 Data disimpan di `localStorage` browser masing-masing pengguna. Artinya data tidak dikirim ke server dan tidak tersinkron antar perangkat. Gunakan tombol **Backup** untuk memindahkan data ke perangkat lain, lalu **Import backup** untuk memulihkannya.
 
 ## 🗂️ Struktur Proyek
